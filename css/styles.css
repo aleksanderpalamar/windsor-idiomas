@@ -1,0 +1,61 @@
+/* Estilos globais */
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Animação de slide-in */
+.slide-in {
+  animation: slideIn 0.5s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Estilos para o carrossel */
+.carousel {
+  transition: transform 0.5s ease-in-out;
+}
+
+/* Estilos para o botão de voltar ao topo */
+#goTop {
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* Estilos para o menu mobile */
+#mobileMenu {
+  transition: transform 0.3s ease-in-out;
+}
+
+#mobileMenu.hidden {
+  display: none;
+}
+
+#mobileMenu a.active {
+  background-color: #1a2733;
+}
+
+/* Estilos adicionais para melhorar a acessibilidade e usabilidade */
+a:focus, button:focus {
+  outline: 2px solid #4A90E2;
+  outline-offset: 2px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}

@@ -1,0 +1,59 @@
+# Windsor Idiomas Website
+
+Este é o site da Windsor Idiomas, uma escola de idiomas especializada em cursos de inglês e espanhol. O site foi construído usando HTML, Tailwind CSS, e JavaScript puro, tornando-o simples de configurar e hospedar.
+
+## Configuração e Hospedagem
+
+Seguir estas etapas para configurar o site em qualquer serviço de hospedagem:
+
+### 1. Preparação dos Arquivos
+
+- Certifique-se de que todos os arquivos do site estão organizados corretamente:
+  - `index.html` na raiz do projeto
+  - Pasta `js` contendo `main.js` e `contact.js`
+  - Pasta `images` com todas as imagens do site
+
+### 2. Escolha um Serviço de Hospedagem
+
+- Escolha qualquer serviço de hospedagem que suporte sites estáticos HTML (ex: Netlify, Vercel, GitHub Pages, ou hospedagem tradicional).
+
+### 3. Faça o Upload dos Arquivos
+
+- Se o serviço de hospedagem oferece integração com GitHub:
+  1. Faça o push do seu projeto para um repositório GitHub.
+  2. Conecte o repositório ao seu serviço de hospedagem.
+  3. O serviço deve detectar automaticamente que é um site estático e configurá-lo corretamente.
+
+- Para hospedagem tradicional:
+  1. Use FTP ou o painel de controle do seu provedor para fazer upload de todos os arquivos e pastas para o diretório público do seu servidor (geralmente chamado de `public_html`, `www`, ou `htdocs`).
+
+### 4. Configuração do Domínio (se aplicável)
+
+- Se você tem um domínio personalizado:
+  1. No painel de controle do seu provedor de domínio, configure os registros DNS para apontar para o seu serviço de hospedagem.
+  2. No seu serviço de hospedagem, adicione o domínio personalizado ao seu projeto.
+
+### 5. Teste o Site
+
+- Após o upload e configuração, acesse o URL fornecido pelo serviço de hospedagem ou seu domínio personalizado para verificar se o site está funcionando corretamente.
+
+### 6. Configuração do Formulário de Contato
+
+- O formulário de contato usa um servidor Node.js para processar os emails. Para configurá-lo:
+  1. Configure um servidor Node.js separado (por exemplo, no Heroku ou DigitalOcean).
+  2. Faça o deploy do arquivo `server/send-email.js` neste servidor.
+  3. Atualize a URL no arquivo `js/contact.js` para apontar para o seu novo servidor de email.
+
+### Notas Importantes
+
+- Este site usa Tailwind CSS via CDN. Não é necessário configuração adicional para o CSS.
+- Certifique-se de que o servidor está configurado para servir `index.html` como a página padrão.
+- Se você encontrar problemas com rotas (por exemplo, recarregar a página em `/about` retorna um erro 404), configure o servidor para redirecionar todas as requisições para `index.html`. Isso permite que o JavaScript do site lide com o roteamento.
+
+## Suporte
+
+Se você encontrar algum problema durante a configuração, não hesite em abrir uma issue neste repositório ou entrar em contato com o desenvolvedor.
+- email: apalamar@live.com
+- site: https://aleksanderpalamar.dev
+
+Enjoy your Windsor Idiomas experience!
